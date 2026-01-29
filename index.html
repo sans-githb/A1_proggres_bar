@@ -1,0 +1,10 @@
+<!doctype html><html><meta charset="utf-8"><title>Progress Bar</title>
+<style>
+  body{margin:0;min-height:100vh;display:grid;place-items:center}
+  .p{width:min(520px,90vw);height:50px;border:2px solid #000;border-radius:999px;overflow:hidden}
+  .p:before{content:"";display:block;height:100%;width:0;background:#33f;transition:width 1.2s ease}
+  .p:hover:before{width:100%}
+</style>
+
+<div class="p" aria-label="progress bar"></div>
+</html>
